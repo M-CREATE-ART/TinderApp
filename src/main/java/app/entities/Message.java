@@ -8,8 +8,14 @@ import lombok.Data;
 public class Message {
     private final int id;
     private final int senderId;
-    private final int receiverId;
-    private final String context;
-    private final String messageDate;
+    private final int receiver;
+    private final String text;
+    private final String date;
 
+
+
+    @Override
+    public String toString() {
+        return String.format("Message[id=%d, senderId=%d, receiverId=%d, text='%s', date='%s']", id, senderId, receiver, text, date);
+    }
 }

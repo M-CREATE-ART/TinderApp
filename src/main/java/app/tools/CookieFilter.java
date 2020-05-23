@@ -1,4 +1,4 @@
-package app.tool;
+package app.tools;
 
 import javax.servlet.*;
 import javax.servlet.http.Cookie;
